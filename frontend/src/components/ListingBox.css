@@ -1,0 +1,55 @@
+.image-card {
+    position: relative;
+    width: 300px; /* Adjust based on your layout */
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Optional: rounded corners */
+  }
+  
+  .save-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+    background: white; /* Light background for visibility */
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Makes it a perfect circle */
+    transition: transform 0.2s ease, background 0.2s ease;
+
+  }
+  
+  .save-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .unsaved {
+    font-size: 15px;
+    color: white;  /* Bookmark stays white */
+    stroke: black; /* Outline stays black */
+    stroke-width: 2px;
+    filter: drop-shadow(0.3px 0.5px 0.7px black); /* Simulated outline */
+  }
+
+  /* Clicked (Saved) State */
+  .saved {
+    font-size: 15px;
+    color: black;  /* Inside turns black */
+    stroke: black; /* Outline remains black */
+    stroke-width: 2px;
+    filter: drop-shadow(0.7px 0.7px 0.7px 0.7px black); /* Simulated outline */
+  }

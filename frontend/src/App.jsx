@@ -1,15 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './Navbar';
-import Home from './Home';
-import Login from './Login';
-import Sidebar from './Sidebar';
-import Listing from './AllListing'; 
-import Map from './Mapview';
-import Ranking from './Ranking';
-import About from './About';
-import Signup from './Signup';
-import Profile from './Profile';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Sidebar from './components/Sidebar';
+import Listing from './pages/AllListing'; 
+import Map from './pages/Mapview';
+import Ranking from './pages/Ranking';
+import About from './pages/About';
 
 import './App.css';
 
@@ -28,8 +26,6 @@ function App() {
             <Route path="/map" element={<Map />} />
             <Route path="/ranking" element={<Ranking />} />
             <Route path="/about" element={<About />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/profile/:userid" element={<Profile/>} />
           </Routes>
         </div>
       </div>
