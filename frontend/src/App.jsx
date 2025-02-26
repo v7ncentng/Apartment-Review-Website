@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Login from './pages/Login';
+import Home from './Home';
+import Login from './Login';
 import Sidebar from './components/Sidebar';
-import Listing from './pages/AllListing'; 
-import Map from './pages/Mapview';
-import Ranking from './pages/Ranking';
-import About from './pages/About';
+import Listing from './AllListing'; 
+import Map from './Mapview';
+import Ranking from './Ranking';
+import About from './About';
 
 import './App.css';
 
@@ -16,6 +16,7 @@ function App() {
     <Router>
       <Navbar />
       <div className="page-container">
+        {/* Render Sidebar for all pages */}
         <Sidebar />
         <div className="content-container">
           <Routes>
