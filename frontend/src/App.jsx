@@ -16,7 +16,6 @@ function App() {
     <Router>
       <Navbar />
       <div className="page-container">
-        {/* Render Sidebar for all pages */}
         <Sidebar />
         <div className="content-container">
           <Routes>
