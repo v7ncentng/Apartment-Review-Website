@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ListingBox from './components/ListingBox'; // Ensure correct import
-import Sidebar from './components/Sidebar';
+import ListingBox from '../components/ListingBox'; // Ensure correct import
+import Sidebar from '../components/Sidebar';
 import './Home.css';
 
 
